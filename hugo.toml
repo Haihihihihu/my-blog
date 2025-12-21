@@ -1,5 +1,5 @@
 # Thay YOUR-USERNAME bằng username GitHub của bạn
-baseURL = 'https://Haihihihihu.github.io/my-blog/'
+baseURL = 'https://Haihihihihu.github.io/'
 languageCode = 'vi'
 title = 'Blog Học Tập & Chia Sẻ'
 theme = 'PaperMod'
