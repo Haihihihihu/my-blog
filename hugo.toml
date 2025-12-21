@@ -28,7 +28,7 @@ disableSpecial1stPost = true
   
     [[params.profileMode.buttons]]
     name = "📝 Bài viết"
-    url = "/posts"
+    url = "my-blog/posts"
 
   [[params.socialIcons]]
   name = "github"
