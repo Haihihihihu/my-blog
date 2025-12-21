@@ -1,0 +1,55 @@
+{{- $img_url := "" -}}
+{{- if .Site.Params.profileMode.imageUrl -}}
+{{- $img_url = .Site.Params.profileMode.imageUrl -}}
+{{- end -}}
+
+<div class="profile">
+    <div class="profile_inner">
+        <div class="main">
+            {{- with .Site.Params.profileMode.title }}
+            <h1>{{ . }}</h1>
+            {{- end }}
+            {{- with .Site.Params.profileMode.subtitle }}
+            <p>{{ . | markdownify }}</p>
+            {{- end }}
+            <div class="buttons">
+                {{- range .Site.Params.profileMode.buttons }}
+                <a class="button" href="{{ .url }}" rel="noopener" title="{{ .name }}">
+                    <span class="button-inner">
+                        {{ .name }}&nbsp;
+                    </span>
+                </a>
+                {{- end }}
+            </div>
+        </div>
+
+        <div class="profile_img_wrapper">
+            {{- if $img_url }}
+            <img draggable="false" 
+                 src="{{ $img_url }}" 
+                 alt="{{ .Site.Params.profileMode.imageTitle | default "Profile" }}" 
+                 height="{{ .Site.Params.profileMode.imageHeight | default 150 }}" 
+                 width="{{ .Site.Params.profileMode.imageWidth | default 150 }}" />
+            {{- end }}
+            
+            {{- if .Site.Params.socialIcons }}
+            <div class="social-icons">
+                {{- range .Site.Params.socialIcons }}
+                {{- $tooltip := "" }}
+                {{- if eq .name "email" }}
+                    {{- $tooltip = strings.TrimPrefix "mailto:" .url }}
+                {{- else if eq .name "phone" }}
+                    {{- $tooltip = strings.TrimPrefix "tel:" .url }}
+                {{- else }}
+                    {{- $tooltip = .name }}
+                {{- end }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer me" 
+                   title="{{ .name }}" aria-label="{{ .name }}" data-tooltip="{{ $tooltip }}">
+                    {{- partial "svg.html" . }}
+                </a>
+                {{- end }}
+            </div>
+            {{- end }}
+        </div>
+    </div>
+</div>

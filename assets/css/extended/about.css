@@ -1,0 +1,365 @@
+/* About Page Styles */
+.main {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: visible !important;
+}
+
+.about-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2rem 3rem !important;
+    overflow: visible !important;
+}
+
+.post-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: visible !important;
+}
+
+.about-container section {
+    margin-bottom: 4rem;
+}
+
+.about-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #58a6ff 0%, #8ab4f8 50%, #ff6b9d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: left;
+}
+
+.about-container h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+/* Intro Section - Full Width */
+.about-intro {
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.05) 0%, rgba(138, 180, 248, 0.08) 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(88, 166, 255, 0.2);
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: var(--content);
+}
+
+/* Two Column Layout for Education & Skills */
+.education-skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+/* Education Section */
+.education-card {
+    display: flex;
+    gap: 2rem;
+    background: var(--entry);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(88, 166, 255, 0.3);
+    border-color: #58a6ff;
+}
+
+.edu-icon {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #58a6ff;
+}
+
+.edu-content p {
+    margin: 0.5rem 0;
+    color: var(--secondary);
+}
+
+.edu-major {
+    font-weight: 600;
+    color: var(--content) !important;
+}
+
+/* Skills Section */
+.skill-category {
+    margin-bottom: 2.5rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--content);
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-list-item:hover {
+    transform: translateX(10px);
+    color: #58a6ff;
+}
+
+.skill-list-item .bullet {
+    color: #58a6ff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Certificates Section */
+.certificates-section {
+    overflow: visible !important;
+}
+
+.cert-description {
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    perspective: 1000px;
+    overflow: visible !important;
+    padding: 2rem 0;
+}
+
+.cert-card {
+    background: var(--entry);
+    border-radius: 15px;
+    overflow: visible;
+    border: 1px solid var(--border);
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-card:hover {
+    transform: translateY(-20px) translateZ(50px) rotateX(8deg) rotateY(-8deg) scale(1.08);
+    box-shadow: 0 30px 80px rgba(88, 166, 255, 0.7),
+                0 0 60px rgba(138, 180, 248, 0.5),
+                inset 0 0 30px rgba(88, 166, 255, 0.15);
+    border-color: #58a6ff;
+    z-index: 100;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.1) 0%, transparent 50%, rgba(138, 180, 248, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cert-card:hover::before {
+    opacity: 1;
+}
+
+.cert-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: var(--entry);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    z-index: 2;
+    flex-shrink: 0;
+    padding: 1rem;
+}
+
+.cert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.cert-card:hover .cert-image img {
+    transform: scale(1.15);
+}
+
+.placeholder-icon {
+    font-size: 4rem;
+    opacity: 0.3;
+}
+
+.cert-info {
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+    background: var(--entry);
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+.cert-info h4 {
+    font-size: 1.05rem;
+    margin: 0;
+    color: var(--content);
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.cert-card:hover .cert-info h4 {
+    color: #58a6ff;
+}
+
+.cert-issuer,
+.cert-date {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin: 0.3rem 0;
+}
+
+.cert-placeholder {
+    border: 2px dashed var(--border);
+    opacity: 0.6;
+}
+
+.cert-placeholder:hover {
+    opacity: 1;
+    border-color: #58a6ff;
+}
+
+.cert-note {
+    background: rgba(88, 166, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #58a6ff;
+}
+
+.cert-note code {
+    background: var(--code-bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #ff6b9d;
+}
+
+/* Contact Section */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(138, 180, 248, 0.1));
+    padding: 2rem;
+    border-radius: 15px;
+    border: 2px solid rgba(88, 166, 255, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: var(--content);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+    box-shadow: 0 8px 25px rgba(88, 166, 255, 0.4);
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(138, 180, 248, 0.2));
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #58a6ff;
+}
+
+.contact-card p {
+    color: var(--secondary);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .certificates-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-container {
+        padding: 2rem 3rem;
+    }
+    
+    .education-skills-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        padding: 1rem 1.5rem;
+    }
+    
+    .about-intro {
+        padding: 2rem;
+    }
+    
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}

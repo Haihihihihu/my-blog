@@ -1,0 +1,64 @@
+# Thay YOUR-USERNAME bằng username GitHub của bạn
+baseURL = 'https://Haihihihihu.github.io/my-blog/'
+languageCode = 'vi'
+title = 'Blog Học Tập & Chia Sẻ'
+theme = 'PaperMod'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+[params]
+defaultTheme = "dark"
+ShowShareButtons = true
+ShowReadingTime = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+disableSpecial1stPost = true
+
+  [params.profileMode]
+  enabled = true
+  title = "Xin chào mọi người, mình là Hải"
+  subtitle = "Sinh viên chuyên ngành An ninh mạng, và đây là không gian mình dùng để ghi chép và chia sẻ những gì mình học được về Lập trình mạng, Java và JavaScript. Blog này không chỉ là đồ án môn học mà còn là hành trình khám phá thế giới công nghệ của một người đang ngày càng yêu thích lập trình hơn. Hy vọng những kiến thức mình chia sẻ sẽ hữu ích cho các bạn cùng đam mê!"
+  imageUrl = "avatar.png"
+  imageWidth = 150
+  imageHeight = 150
+  imageTitle = "Hải"
+  
+    [[params.profileMode.buttons]]
+    name = "📝 Bài viết"
+    url = "/posts"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Haihihihihu"
+  
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:phamhai0959@gmail.com"
+  
+  [[params.socialIcons]]
+  name = "phone"
+  url = "tel:0396993820"
+  
+
+[[menu.main]]
+name = "Trang chủ"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Blog"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+name = "Dự án"
+url = "/projects/"
+weight = 3
+
+[[menu.main]]
+name = "Về tôi"
+url = "/about/"
+weight = 4
