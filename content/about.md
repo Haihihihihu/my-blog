@@ -98,7 +98,7 @@ showToc: false
         <!-- Certificate 1 -->
         <div class="cert-card">
             <div class="cert-image">
-                <img src="cc1.png" alt="JavaScript Essentials 1 Certificate" />
+                <img src="{{ .Site.BaseURL }}cc1.png" alt="JavaScript Essentials 1 Certificate" />
             </div>
             <div class="cert-info">
                 <h4>JavaScript Essentials 1</h4>
@@ -107,7 +107,7 @@ showToc: false
         <!-- Certificate 2 -->
         <div class="cert-card">
             <div class="cert-image">
-                <img src="cc2.png" alt="Networking Basics Certificate" />
+                <img src="{{ .Site.BaseURL }}cc2.png" alt="Networking Basics Certificate" />
             </div>
             <div class="cert-info">
                 <h4>Networking Basics</h4>
@@ -116,7 +116,7 @@ showToc: false
         <!-- Certificate 3 -->
         <div class="cert-card">
             <div class="cert-image">
-                <img src="cc3.png" alt="JavaScript Essentials 2 Certificate" />
+                <img src="{{ .Site.BaseURL }}cc3.png" alt="JavaScript Essentials 2 Certificate" />
             </div>
             <div class="cert-info">
                 <h4>JavaScript Essentials 2</h4>
