@@ -3,6 +3,7 @@ baseURL = 'https://Haihihihihu.github.io/my-blog/'
 languageCode = 'vi'
 title = 'Blog Học Tập & Chia Sẻ'
 theme = 'PaperMod'
+canonifyURLs = true
 
 [markup]
   [markup.goldmark]
@@ -45,20 +46,20 @@ disableSpecial1stPost = true
 
 [[menu.main]]
 name = "Trang chủ"
-url = "/my-blog/"
+url = "/"
 weight = 1
 
 [[menu.main]]
 name = "Blog"
-url = "/my-blog/posts/"
+url = "/posts/"
 weight = 2
 
 [[menu.main]]
 name = "Dự án"
-url = "/my-blog/projects/"
+url = "/projects/"
 weight = 3
 
 [[menu.main]]
 name = "Về tôi"
-url = "/my-blog/about/"
+url = "/about/"
 weight = 4
