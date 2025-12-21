@@ -3,6 +3,7 @@ baseURL = 'https://Haihihihihu.github.io/my-blog/'
 languageCode = 'vi'
 title = 'Blog Học Tập & Chia Sẻ'
 theme = 'PaperMod'
+relativeURLs = false
 canonifyURLs = true
 
 [markup]
