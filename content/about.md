@@ -98,7 +98,7 @@ showToc: false
         <!-- Certificate 1 -->
         <div class="cert-card">
             <div class="cert-image">
-                <img src="/cc1.png" alt="Java Certificate" />
+                <img src="cc1.png" alt="Java Certificate" />
             </div>
             <div class="cert-info">
                 <h4>JavaScript Essentials 1</h4>
@@ -107,7 +107,7 @@ showToc: false
         <!-- Certificate 2 -->
         <div class="cert-card">
             <div class="cert-image">
-                <img src="/cc2.png" alt="Networking Certificate" />
+                <img src="cc2.png" alt="Networking Certificate" />
             </div>
             <div class="cert-info">
                 <h4>Networking Basics</h4>
@@ -116,7 +116,7 @@ showToc: false
         <!-- Certificate 3 -->
         <div class="cert-card">
             <div class="cert-image">
-                <img src="/cc3.png" alt="Java Certificate" />
+                <img src="cc3.png" alt="Java Certificate" />
             </div>
             <div class="cert-info">
                 <h4>JavaScript Essentials 2</h4>
