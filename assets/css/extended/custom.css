@@ -292,56 +292,76 @@
 }
 
 /* Dropdown Menu Styling */
-.menu {
+#menu {
     position: relative;
 }
 
-.menu li {
+#menu li {
     position: relative;
 }
 
 /* Hide submenu by default */
-.menu li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--theme);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    min-width: 200px;
-    padding: 8px 0;
-    z-index: 1000;
-    margin-top: 4px;
+#menu li ul,
+#menu li .submenu {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    background: var(--theme) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) !important;
+    min-width: 220px !important;
+    padding: 12px 0 !important;
+    z-index: 9999 !important;
+    margin-top: 8px !important;
+    animation: slideDown 0.2s ease !important;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Show submenu on hover */
-.menu li:hover > ul {
+#menu li:hover > ul,
+#menu li:hover > .submenu {
     display: block !important;
 }
 
 /* Submenu items */
-.menu li ul li {
-    display: block;
-    width: 100%;
+#menu li ul li,
+#menu .submenu li {
+    display: block !important;
+    width: 100% !important;
 }
 
-.menu li ul li a {
-    display: block;
-    padding: 10px 20px;
-    white-space: nowrap;
-    transition: background 0.2s ease;
+#menu li ul li a,
+#menu .submenu li a {
+    display: block !important;
+    padding: 12px 24px !important;
+    white-space: nowrap !important;
+    transition: all 0.2s ease !important;
+    color: var(--primary) !important;
 }
 
-.menu li ul li a:hover {
-    background: var(--hljs-bg);
+#menu li ul li a:hover,
+#menu .submenu li a:hover {
+    background: var(--hljs-bg) !important;
+    padding-left: 28px !important;
 }
 
 /* Arrow indicator for parent menu */
+#menu li:has(ul) > a::after,
 .menu li:has(ul) > a::after {
-    content: " ▼";
-    font-size: 0.7em;
-    margin-left: 4px;
-    opacity: 0.7;
+    content: " ▼" !important;
+    font-size: 0.7em !important;
+    margin-left: 4px !important;
+    opacity: 0.7 !important;
 }
