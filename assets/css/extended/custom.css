@@ -290,3 +290,58 @@
 .post-entry .entry-footer {
     margin-top: 0 !important;
 }
+
+/* Dropdown Menu Styling */
+.menu {
+    position: relative;
+}
+
+.menu li {
+    position: relative;
+}
+
+/* Hide submenu by default */
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    padding: 8px 0;
+    z-index: 1000;
+    margin-top: 4px;
+}
+
+/* Show submenu on hover */
+.menu li:hover > ul {
+    display: block !important;
+}
+
+/* Submenu items */
+.menu li ul li {
+    display: block;
+    width: 100%;
+}
+
+.menu li ul li a {
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+}
+
+.menu li ul li a:hover {
+    background: var(--hljs-bg);
+}
+
+/* Arrow indicator for parent menu */
+.menu li:has(ul) > a::after {
+    content: " ▼";
+    font-size: 0.7em;
+    margin-left: 4px;
+    opacity: 0.7;
+}
