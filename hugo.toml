@@ -54,14 +54,22 @@ url = "/posts/"
 weight = 2
 
 [[menu.main]]
-name = "Main Projects"
-url = "/projects/#main"
+name = "Dự án"
+identifier = "projects"
+url = "#"
 weight = 3
 
-[[menu.main]]
-name = "Side Projects"
-url = "/projects/#side"
-weight = 4
+  [[menu.main]]
+  name = "Main Projects"
+  parent = "projects"
+  url = "/projects/#main"
+  weight = 1
+
+  [[menu.main]]
+  name = "Side Projects"
+  parent = "projects"
+  url = "/projects/#side"
+  weight = 2
 
 [[menu.main]]
 name = "Về tôi"
