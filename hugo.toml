@@ -56,7 +56,7 @@ weight = 2
 [[menu.main]]
 name = "Dự án"
 identifier = "projects"
-url = "#"
+url = "/projects/"
 weight = 3
 
   [[menu.main]]
