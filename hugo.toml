@@ -55,23 +55,10 @@ weight = 2
 
 [[menu.main]]
 name = "Dự án"
-identifier = "projects"
-url = "#"
+url = "/projects/"
 weight = 3
-
-  [[menu.main]]
-  name = "Main Projects"
-  parent = "projects"
-  url = "/projects/#main"
-  weight = 1
-
-  [[menu.main]]
-  name = "Side Projects"
-  parent = "projects"
-  url = "/projects/#side"
-  weight = 2
 
 [[menu.main]]
 name = "Về tôi"
 url = "/about/"
-weight = 5
+weight = 4
