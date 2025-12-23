@@ -1,0 +1,268 @@
+/* Custom Profile Mode Layout - Avatar bên phải, text bên trái */
+.profile {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 4rem !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 4rem 2rem !important;
+    position: relative !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    border: none !important;
+}
+
+/* Background decorative elements */
+.profile::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -50px !important;
+    right: -50px !important;
+    width: 200px !important;
+    height: 200px !important;
+    background: radial-gradient(circle, rgba(88, 166, 255, 0.15) 0%, transparent 70%) !important;
+    border-radius: 50% !important;
+    z-index: -1 !important;
+    animation: float 6s ease-in-out infinite !important;
+}
+
+.profile::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -30px !important;
+    left: -30px !important;
+    width: 150px !important;
+    height: 150px !important;
+    background: radial-gradient(circle, rgba(138, 180, 248, 0.15) 0%, transparent 70%) !important;
+    border-radius: 50% !important;
+    z-index: -1 !important;
+    animation: float 8s ease-in-out infinite reverse !important;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) !important;
+    }
+    50% {
+        transform: translateY(-20px) !important;
+    }
+}
+
+.profile_inner {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    align-items: center !important;
+    gap: 3rem !important;
+}
+
+/* Text content bên trái */
+.profile .main {
+    order: 1 !important;
+    flex: 1 !important;
+    text-align: left !important;
+    max-width: 600px !important;
+}
+
+/* Avatar container bên phải */
+.profile .profile_img_wrapper {
+    order: 2 !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1.5rem !important;
+    align-self: flex-start !important;
+    margin-top: -1rem !important;
+}
+
+.profile img {
+    border-radius: 50% !important;
+    border: 5px solid transparent !important;
+    background: linear-gradient(var(--theme), var(--theme)) padding-box,
+                linear-gradient(135deg, #58a6ff, #8ab4f8, #ff6b9d) border-box !important;
+    box-shadow: 0 12px 40px rgba(88, 166, 255, 0.5),
+                0 0 80px rgba(138, 180, 248, 0.3),
+                inset 0 0 20px rgba(88, 166, 255, 0.1) !important;
+    transition: all 0.4s ease !important;
+    position: relative !important;
+    width: 220px !important;
+    height: 220px !important;
+    object-fit: cover !important;
+}
+
+.profile img:hover {
+    transform: scale(1.05) rotate(3deg) !important;
+    box-shadow: 0 16px 60px rgba(88, 166, 255, 0.7),
+                0 0 100px rgba(138, 180, 248, 0.4),
+                inset 0 0 30px rgba(88, 166, 255, 0.2) !important;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex !important;
+    gap: 1.5rem !important;
+    justify-content: center !important;
+    margin-top: 0.5rem !important;
+}
+
+.social-icons a {
+    width: 48px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.15), rgba(138, 180, 248, 0.15)) !important;
+    border: 2px solid rgba(88, 166, 255, 0.3) !important;
+    transition: all 0.3s ease !important;
+    color: var(--primary) !important;
+    font-size: 1.3rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.social-icons a::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 0 !important;
+    border-radius: 50% !important;
+    background: rgba(88, 166, 255, 0.3) !important;
+    transform: translate(-50%, -50%) !important;
+    transition: width 0.4s ease, height 0.4s ease !important;
+}
+
+.social-icons a:hover::before {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.1) !important;
+    box-shadow: 0 8px 20px rgba(88, 166, 255, 0.4) !important;
+    border-color: rgba(88, 166, 255, 0.6) !important;
+}
+
+.social-icons a svg {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.social-icons:hover a:not(:hover) {
+    opacity: 0.6 !important;
+    transform: scale(0.95) !important;
+}
+
+/* Button styling */
+.profile .button {
+    display: inline-block !important;
+    padding: 14px 32px !important;
+    background: linear-gradient(135deg, #58a6ff, #8ab4f8) !important;
+    color: white !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    margin-top: 2rem !important;
+    box-shadow: 0 6px 20px rgba(88, 166, 255, 0.4) !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.profile .button::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent) !important;
+    transition: left 0.5s ease !important;
+}
+
+.profile .button:hover::before {
+    left: 100% !important;
+}
+
+.profile .button:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 8px 30px rgba(88, 166, 255, 0.6) !important;
+    background: linear-gradient(135deg, #4a9eff, #6eb5ff) !important;
+}
+
+/* Title & Subtitle */
+.profile .main h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 1rem !important;
+    background: linear-gradient(135deg, #58a6ff 0%, #8ab4f8 50%, #ff6b9d 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    animation: gradientShift 3s ease infinite !important;
+    background-size: 200% 200% !important;
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        background-position: 0% 50% !important;
+    }
+    50% {
+        background-position: 100% 50% !important;
+    }
+}
+
+.profile .main p {
+    font-size: 1.2rem !important;
+    line-height: 1.9 !important;
+    color: var(--content) !important;
+    opacity: 1 !important;
+    font-weight: 400 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column !important;
+    }
+    
+    .profile_inner {
+        flex-direction: column-reverse !important;
+    }
+    
+    .profile .main {
+        order: 2 !important;
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+    
+    .profile .profile_img_wrapper {
+        order: 1 !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .profile .main h1 {
+        font-size: 2rem !important;
+    }
+    
+    .profile .main p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Ẩn nội dung mô tả trong danh sách bài viết, chỉ hiển thị tiêu đề */
+.post-entry .entry-content {
+    display: none !important;
+}
+
+.post-entry .entry-footer {
+    margin-top: 0 !important;
+}
