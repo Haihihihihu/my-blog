@@ -54,11 +54,16 @@ url = "/posts/"
 weight = 2
 
 [[menu.main]]
-name = "Dự án"
-url = "/projects/"
+name = "Main Projects"
+url = "/projects/#main"
 weight = 3
+
+[[menu.main]]
+name = "Side Projects"
+url = "/projects/#side"
+weight = 4
 
 [[menu.main]]
 name = "Về tôi"
 url = "/about/"
-weight = 4
+weight = 5
