@@ -220,6 +220,64 @@ ShowBreadCrumbs: true
 <p style="color: #bac2de;">Các dự án phụ và thử nghiệm công nghệ</p>
 </div>
 
-<p style="text-align: center; color: #6c7086; font-style: italic; margin: 40px 0;">
-    Đang cập nhật thêm các dự án mới...
-</p>
+<div class="project-card">
+    <div class="project-header">
+        <h3 class="project-title">Khai thác tập mục ẩn có độ chiếm dụng hữu ích cao</h3>
+        <span class="project-status in-progress">🔬 Research</span>
+    </div>
+    <p class="project-description">
+        Nghiên cứu lý thuyết dựa trên thuật toán HHUIF (High Hiding Utility Itemsets Framework), đề xuất cải tiến nhằm tối ưu quá trình ẩn dữ liệu nhạy cảm trong khai phá dữ liệu.
+    </p>
+    <div class="project-section">
+        <h4>🎯 Mục tiêu</h4>
+        <ul>
+            <li>Nghiên cứu và phân tích thuật toán HHUIF</li>
+            <li>Đề xuất cải tiến để tối ưu hiệu suất ẩn dữ liệu</li>
+            <li>Bảo vệ thông tin nhạy cảm trong khai phá dữ liệu</li>
+        </ul>
+    </div>
+    <div class="project-section">
+        <h4>🛠️ Lĩnh vực</h4>
+        <div class="tech-tags">
+            <span class="tech-tag">Data Mining</span>
+            <span class="tech-tag">Algorithm Design</span>
+            <span class="tech-tag">Research</span>
+        </div>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-header">
+        <h3 class="project-title">E-commerce Website (Sportswear)</h3>
+        <span class="project-status">✓ Hoàn thành</span>
+    </div>
+    <p class="project-description">
+        Xây dựng website thương mại điện tử chuyên về trang phục thể thao với đầy đủ chức năng quản lý sản phẩm, giỏ hàng, thanh toán và quản trị hệ thống.
+    </p>
+    <div class="project-section">
+        <h4>🛠️ Công nghệ sử dụng</h4>
+        <div class="tech-tags">
+            <span class="tech-tag">ASP.NET</span>
+            <span class="tech-tag">Microsoft SQL Server</span>
+            <span class="tech-tag">C#</span>
+        </div>
+    </div>
+</div>
+
+<div class="project-card">
+    <div class="project-header">
+        <h3 class="project-title">TOEIC Practice Mobile App</h3>
+        <span class="project-status">✓ Hoàn thành</span>
+    </div>
+    <p class="project-description">
+        Ứng dụng mobile hỗ trợ luyện thi TOEIC với các bài tập, đề thi thử và theo dõi tiến độ học tập.
+    </p>
+    <div class="project-section">
+        <h4>🛠️ Công nghệ sử dụng</h4>
+        <div class="tech-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Mobile Development</span>
+        </div>
+    </div>
+</div>
