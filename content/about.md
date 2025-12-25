@@ -136,10 +136,6 @@ showToc: false
             <div class="cert-image">
                 <div class="placeholder-icon">📜</div>
             </div>
-            <div class="cert-info">
-                <h4>Thêm chứng chỉ mới</h4>
-                <p class="cert-description">Đang học và chuẩn bị thi thêm các chứng chỉ khác...</p>
-            </div>
         </div>
     </div>
 </section>
