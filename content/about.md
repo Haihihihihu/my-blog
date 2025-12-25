@@ -13,6 +13,16 @@ showToc: false
         <h2>👋 Xin chào, mình là Hải!</h2>
         <p>Sinh viên chuyên ngành <strong>An ninh mạng</strong>, đang trên hành trình khám phá và chinh phục thế giới công nghệ.
         <p>Blog này không chỉ là nơi mình lưu trữ kiến thức mà còn là không gian để chia sẻ những điều mình học được trên con đường trở thành một chuyên gia bảo mật mạng trong tương lai.</p>
+        
+        <!-- Quote section -->
+        <div class="security-quote">
+            <div class="quote-icon">🔍</div>
+            <blockquote>
+                <p class="quote-text">Logs tell stories. You just need to know how to read them.</p>
+                <footer class="quote-footer">— Nhật ký kể lên câu chuyện. Bạn chỉ cần biết cách đọc chúng.</footer>
+            </blockquote>
+        </div>
+        <!-- Gợi ý: Thông tin liên hệ đầy đủ được ẩn trong trang này. Hãy thử di chuột vào các dấu hỏi (?) để xem gợi ý! -->
     </div>
 </section>
 
@@ -144,16 +154,20 @@ showToc: false
             <h4>Email</h4>
             <p>phamhai0959@gmail.com</p>
         </a>
-        <a href="https://github.com/Haihihihihu" class="contact-card" target="_blank">
+        <!-- Gợi ý: Username GitHub bắt đầu bằng "Hai" -->
+        <a href="https://github.com/Ha████████" class="contact-card" target="_blank">
             <div class="contact-icon">💻</div>
             <h4>GitHub</h4>
-            <p>@Haihihihihu</p>
+            <p>@Ha████████<span class="mystery-hint" title="Gợi ý: Nhấn chuột phải vào trang → Xem mã nguồn trang (View Page Source) và tìm comment ở trên dòng này">❓</span></p>
         </a>
-        <a href="tel:0396993820" class="contact-card">
+        <!-- Gợi ý: Số điện thoại đầy đủ là 03969938 + hai số cuối là 20 -->
+        <a href="tel:03969938██" class="contact-card">
             <div class="contact-icon">📱</div>
             <h4>Phone</h4>
-            <p>0396993820</p>
+            <p>03969938<span class="hidden-digits">██</span><span class="mystery-hint" title="Gợi ý: Nhấn chuột phải → Xem mã nguồn trang và đọc comment phía trên dòng này. Hoặc số cuối = 10 + 10">❓</span></p>
         </a>
     </div>
 </section>
 </div>
+
+
