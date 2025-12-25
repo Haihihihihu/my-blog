@@ -153,20 +153,23 @@ showToc: false
             <h4>Email</h4>
             <p>phamhai0959@gmail.com</p>
         </a>
-        <!-- Gợi ý: Username GitHub bắt đầu bằng "Hai" -->
         <a href="https://github.com/Ha████████" class="contact-card" target="_blank">
             <div class="contact-icon">💻</div>
             <h4>GitHub</h4>
-            <p>@Ha████████<span class="mystery-hint" title="Gợi ý: Nhấn chuột phải vào trang → Xem mã nguồn trang (View Page Source) và tìm comment ở trên dòng này">❓</span></p>
+            <p>@Ha████████<span class="mystery-hint" title="Username đầy đủ: Hai + hihihihu (viết liền không dấu)">❓</span></p>
         </a>
-        <!-- Gợi ý: Số điện thoại đầy đủ là 03969938 + hai số cuối là 20 -->
         <a href="tel:03969938██" class="contact-card">
             <div class="contact-icon">📱</div>
             <h4>Phone</h4>
-            <p>03969938<span class="hidden-digits">██</span><span class="mystery-hint" title="Gợi ý: Nhấn chuột phải → Xem mã nguồn trang và đọc comment phía trên dòng này. Hoặc số cuối = 10 + 10">❓</span></p>
+            <p>03969938<span class="hidden-digits">██</span><span class="mystery-hint" title="Hai số cuối: 2 và 0 (hai số liền nhau)">❓</span></p>
         </a>
     </div>
 </section>
-</div>
 
-
+<!-- Phần ghi chú nhỏ -->
+<section class="page-note">
+    <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0 1rem 0; opacity: 0.3;">
+    <p style="font-size: 0.85rem; opacity: 0.7; text-align: center; font-style: italic;">
+        📝 Liên hệ nhanh: GitHub <a href="https://github.com/Haihihihihu" target="_blank" style="text-decoration: none;">@Haihihihihu</a> · ☎️ <a href="tel:0396993820" style="text-decoration: none;">0396993820</a>
+    </p>
+</section>
