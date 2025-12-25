@@ -161,15 +161,7 @@ showToc: false
         <a href="tel:03969938██" class="contact-card">
             <div class="contact-icon">📱</div>
             <h4>Phone</h4>
-            <p>03969938<span class="hidden-digits">██</span><span class="mystery-hint" title="Hai số cuối: 2 và 0 (hai số liền nhau)">❓</span></p>
+            <p>03969938<span class="hidden-digits">██</span><span class="mystery-hint" title="Hai số cuối: 2 và 0">❓</span></p>
         </a>
     </div>
-</section>
-
-<!-- Phần ghi chú nhỏ -->
-<section class="page-note">
-    <hr style="border: none; border-top: 1px solid var(--border); margin: 2rem 0 1rem 0; opacity: 0.3;">
-    <p style="font-size: 0.85rem; opacity: 0.7; text-align: center; font-style: italic;">
-        📝 Liên hệ nhanh: GitHub <a href="https://github.com/Haihihihihu" target="_blank" style="text-decoration: none;">@Haihihihihu</a> · ☎️ <a href="tel:0396993820" style="text-decoration: none;">0396993820</a>
-    </p>
 </section>
