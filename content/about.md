@@ -13,7 +13,6 @@ showToc: false
         <h2>👋 Xin chào, mình là Hải!</h2>
         <p>Sinh viên chuyên ngành <strong>An ninh mạng</strong>, đang trên hành trình khám phá và chinh phục thế giới công nghệ.
         <p>Blog này không chỉ là nơi mình lưu trữ kiến thức mà còn là không gian để chia sẻ những điều mình học được trên con đường trở thành một chuyên gia bảo mật mạng trong tương lai.</p>
-        
         <!-- Quote section -->
         <div class="security-quote">
             <div class="quote-icon">🔍</div>
