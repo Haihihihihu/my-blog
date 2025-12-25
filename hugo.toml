@@ -31,17 +31,8 @@ disableSpecial1stPost = true
     url = "posts"
 
   [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/Haihihihihu"
-  
-  [[params.socialIcons]]
   name = "email"
   url = "mailto:phamhai0959@gmail.com"
-  
-  [[params.socialIcons]]
-  name = "phone"
-  url = "tel:0396993820"
-  
 
 [[menu.main]]
 name = "Trang chủ"
