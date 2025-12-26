@@ -27,7 +27,7 @@ disableSpecial1stPost = true
   imageTitle = "Hải"
   
     [[params.profileMode.buttons]]
-    name = "� Xem blog"
+    name = "📚 Xem blog"
     url = "posts"
 
   [[params.socialIcons]]
