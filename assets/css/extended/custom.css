@@ -81,25 +81,22 @@
 }
 
 .profile img {
-    border-radius: 50% !important;
-    border: 5px solid transparent !important;
-    background: linear-gradient(var(--theme), var(--theme)) padding-box,
-                linear-gradient(135deg, #58a6ff, #8ab4f8, #ff6b9d) border-box !important;
-    box-shadow: 0 12px 40px rgba(88, 166, 255, 0.5),
-                0 0 80px rgba(138, 180, 248, 0.3),
-                inset 0 0 20px rgba(88, 166, 255, 0.1) !important;
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0 12px 40px rgba(88, 166, 255, 0.3),
+                0 0 80px rgba(138, 180, 248, 0.2) !important;
     transition: all 0.4s ease !important;
     position: relative !important;
-    width: 220px !important;
-    height: 220px !important;
+    width: auto !important;
+    max-width: 450px !important;
+    height: auto !important;
     object-fit: cover !important;
 }
 
 .profile img:hover {
-    transform: scale(1.05) rotate(3deg) !important;
-    box-shadow: 0 16px 60px rgba(88, 166, 255, 0.7),
-                0 0 100px rgba(138, 180, 248, 0.4),
-                inset 0 0 30px rgba(88, 166, 255, 0.2) !important;
+    transform: scale(1.02) !important;
+    box-shadow: 0 16px 60px rgba(88, 166, 255, 0.4),
+                0 0 100px rgba(138, 180, 248, 0.25) !important;
 }
 
 /* Social Icons */
