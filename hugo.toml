@@ -20,14 +20,14 @@ disableSpecial1stPost = true
   [params.profileMode]
   enabled = true
   title = "Xin chào mọi người, mình là Hải"
-  subtitle = "Sinh viên chuyên ngành An ninh mạng, và đây là không gian mình dùng để ghi chép và chia sẻ những gì mình học được về Lập trình mạng, Java và JavaScript. Blog này không chỉ là đồ án môn học mà còn là hành trình khám phá thế giới công nghệ của một người đang ngày càng yêu thích lập trình hơn. Hy vọng những kiến thức mình chia sẻ sẽ hữu ích cho các bạn cùng đam mê!"
+  subtitle = "Mình là Hải – sinh viên An ninh mạng, đang trên hành trình tìm hiểu cách hệ thống được giám sát và bảo vệ trong môi trường thực tế. Blog này là nơi mình chia sẻ quá trình học, thử nghiệm và xây dựng các dự án nhỏ liên quan đến lập trình mạng và an ninh hệ thống."
   imageUrl = "avatar.png"
   imageWidth = 150
   imageHeight = 150
   imageTitle = "Hải"
   
     [[params.profileMode.buttons]]
-    name = "📝 Bài viết"
+    name = "� Xem blog"
     url = "posts"
 
   [[params.socialIcons]]
