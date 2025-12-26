@@ -30,10 +30,6 @@ disableSpecial1stPost = true
     name = "📚 Xem blog"
     url = "posts"
 
-  [[params.socialIcons]]
-  name = "email"
-  url = "mailto:phamhai0959@gmail.com"
-
 [[menu.main]]
 name = "Trang chủ"
 url = "/"
