@@ -148,7 +148,7 @@
 
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 2rem;
     perspective: 1000px;
