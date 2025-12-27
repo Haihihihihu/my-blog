@@ -131,15 +131,7 @@ showToc: false
                 <h4>JavaScript Essentials 2</h4>
             </div>
         </div>
-        <!-- Placeholder để thêm certificate sau -->
-        <div class="cert-card cert-placeholder">
-            <div class="cert-image">
-                <div class="placeholder-icon">📜</div>
-            </div>
-        </div>
-    </div>
-</section>
-
+        
 <!-- Phần liên hệ -->
 <section class="contact-section">
     <h2>📬 Liên hệ với mình</h2>
