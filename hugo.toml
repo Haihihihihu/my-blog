@@ -20,7 +20,7 @@ disableSpecial1stPost = true
   [params.profileMode]
   enabled = true
   title = "Xin chào mọi người, mình là Hải"
-  subtitle = "Mình là Hải – sinh viên An ninh mạng, đang trên hành trình tìm hiểu cách hệ thống được giám sát và bảo vệ trong môi trường thực tế. Blog này là nơi mình chia sẻ quá trình học, thử nghiệm và xây dựng các dự án nhỏ liên quan đến lập trình mạng và an ninh hệ thống."
+  subtitle = "Mình là sinh viên thuộc chuyên ngành An ninh mạng, đang trên hành trình tìm hiểu cách hệ thống được giám sát và bảo vệ trong môi trường thực tế. Blog này là nơi mình chia sẻ quá trình học, thử nghiệm và xây dựng các dự án nhỏ liên quan đến lập trình mạng và an ninh hệ thống."
   imageUrl = "avatar.png"
   imageWidth = 150
   imageHeight = 150
